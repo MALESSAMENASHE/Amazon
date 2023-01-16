@@ -188,7 +188,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15px;
+    background-color: #232f3d;
 }
 
 .container-nav ul {
@@ -239,6 +239,7 @@ body {
     width: 80vh;
     height: 70vh;
     position: relative;
+    margin: 0;
 
 
 }
