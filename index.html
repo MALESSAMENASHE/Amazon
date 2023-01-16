@@ -1,83 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/colors.css">
-    <link rel="stylesheet" href="/css/reset1.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
     <title>Amazon</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-  <div class="navbars">
-    <div class="firstNav">
-        <div class="firstleft">
-            <div class="logo">
-              <a href="https://www.amazon.com/ref=nav_logo"></a>
-            </div>
-            <div class="delivery">
-              <h2>Deliver to</h2>
-              <h1>Israel</h1>
+    <header class="header">
+        <div class="container container-header">
+            <div class="logo-container border-white">
+                <div class="logo"></div>
                 
             </div>
-        </div>
-        <div class="searchbox">
-          <h2>All</h2>
-          <input type="text" class="searchinput">
-          <div class="searchicon"> 
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-        <div class="firstright">
-          <div class="language">
-            <div class="flag"></div>
-            <div><h1>EN<i class="fa-solid fa-caret-down"></i></h1></div>
-          </div>
-          <div class="signin"></div>
-          <h2>Hello, sign in</h2>
-          <h1>Accunt & Lists <i class="fa-solid fa-caret-down"></i></h1>
-          <div class="orders">
-            <h2>Returns</h2>
-            <h1>& Orders</h1>
-          </div>
-          <div class="cart"></div>
 
+            <div class="address border-white">
+                <p class="hello">Deliver to</p>
+                <div class="icon-address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Israel</p>
+                </div>
+            </div>
+
+            <div class="search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+            <div class="language border-white">
+                <p>EN<i class="fa-solid fa-caret-down"></i></p>
+                <div class="lauguge-image">
+                   
+                </div>
+            </div>
+
+            <div class="login border-white">
+                <p>Hello,sign in</p>
+                <p class="account">Account & Lists</p>
+            </div>
+
+            <div class="return-order-container">
+                <p>Returns
+                <div class="order">& Orders</div>
+                </p>
+            </div>
+
+            <div class="cart border-white">
+                <!-- <div class="cart_img"></div> -->
+                <a href="">Cart</a>
+
+              
+            </div>
         </div>
-    </div>
-    <div class="secondNav">
-        <div class="secondleft">
+    </header>
+
+    <!--navigation-->
+    <nav class="nav">
+        <div class="container container-nav">
             <ul>
-                <li>
-                  <i class="fa-sharp fa-solid fa-bars">All</i>
+                <li class="border-white" id="open-nav-sidebar">
+                    <span class="open-nav-slider">
+                        <i class="fa-solid fa-bars"></i>
+                        All
+                    </span>
                 </li>
-                <li><a href="#">Today's Deals</a></li>
-                <li><a href="#"></a>Customer Service</li>
-                <li><a href="#">Gift cards</a></li>
-                <li><a href="#">Registry</a></li>
-                <li><a href="#">Sell</a></li>
+                <li class="border-white"><a href="#">Best Sellers</a></li>
+                <li class="border-white"><a href="#">Today's Deals</a></li>
+                <li class="border-white"><a href="#">customer Service</a></li>
+                <li class="border-white"><a href="#">Regisrty</a></li>
+                <li class="border-white"><a href="#">gift Cards</a></li>
+                <li class="border-white"><a href="#">Sell</a></li>
+                    
+
+                </li>
             </ul>
+            <div class="nav-right-image-amazon-prime">
+                <a href="">Shop great deals now</a>
+            </div>
         </div>
-        <div class="secondright">
-            <a href="#">Shop great deals now</a>
-        </div>
+    </nav>
+
+  <div class="thirdnav">
+    <div class="bcp">
+        <a href=""></a>
     </div>
-    <div class="thirdNav">item 3</div>
-</div>
+    <div class="Description"> Trending Outdoor For Everyone in The Family</div>
+    <div>price</div>
+    <div class="imgitem"></div>
+
+  </div>
+
+
+
+    
+    <!--today's deals -->
+    <section class="Products_related_container">
+        <div class="Products_related_heading">
+            <h1>Products related to this item</h1>
+            <p><a href="#">Sponsored</a></p>
+        </div>
+
+        <div class="Products_related_product_container">
+            <div class="Products_related_btn_container">
+                <button  class="Products_related_btn" id="Products_related_btn_prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="Products_related_btn" id="Products_related_btn_next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="Products_related_product_list">
+                <div class="Products_related_product_item">
+                    <img src="/asst/3151Z2Q6JPL._AC_SR480,600_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                     
+                    </div>
+                    <p></p>
+                </div>
+
+                <div class="Products_related_product_item">
+                    <img src="/asst/41-JXj6iVwL._AC_SR480,600_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        
+                    </div>
+                    <p></p>
+                </div>
+
+                <div class="Products_related_product_item">
+                    <img src="/asst/41PJL5yD84L._AC_SR320,400_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      
+                    </div>
+                    <p></p>
+                </div>
+
+                <div class="Products_related_product_item">
+                    <img src="/asst/41rPb0hAJyL._AC_SR480,600_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    
+                    </div>
+                    <p></p>
+                </div>
+
+                <div class="Products_related_product_item">
+                    <img src="/asst/41wdtn87hbL._AC_SR480,600_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+
+    
+
+
+
+
+
+
+
+    <script src="javascript.js" type="module"></script>
 </body>
+
 </html>
-
-
-<i class="fa-solid fa-location-dot"></i>
-<i class="fa-solid fa-caret-down"></i>
-<!-- .sprite {
-	background: url('imgs/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -340px;
-	width: 38px;
-	height: 19px;
-}
-.sprite {
-	background: url('imgs/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -51px;
-	width: 96px;
-	height: 29px;
-} -->
